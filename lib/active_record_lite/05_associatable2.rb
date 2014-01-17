@@ -9,8 +9,8 @@ module Associatable
     define_method(name) do
     # find object's human
     # use human's assoc_options to get to house
-    # through_options = self.send(through_name).assoc_options
-    # source_options = through_options.model_class.assoc_options
+    through_options = self.send(through_name).assoc_options
+    source_options = through_options.model_class.assoc_options
     end
   end
 end
